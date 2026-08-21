@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Solarmax Energy Ltd | Solar Energy Solutions</title>
+    <title>TOBAFSAT8080 GLOBAL RESOURCES COMPANY (TOBAFTECH MULTILINK) | Solar Energy Solutions</title>
 
 
     <style>
@@ -1327,6 +1327,188 @@
         }
 
 
+
+        /* =========================================
+           ANIMATIONS
+        ========================================= */
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-45px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeRight {
+            from {
+                opacity: 0;
+                transform: translateX(45px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.92);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes floatImage {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                box-shadow: 0 0 0 rgba(34,197,94,0);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(34,197,94,0.18);
+            }
+        }
+
+        .animate-up {
+            animation: fadeUp 0.9s ease both;
+        }
+
+        .animate-left {
+            animation: fadeLeft 0.9s ease both;
+        }
+
+        .animate-right {
+            animation: fadeRight 0.9s ease both;
+        }
+
+        .animate-zoom {
+            animation: zoomIn 0.9s ease both;
+        }
+
+        .hero-image {
+            animation: floatImage 5s ease-in-out infinite;
+        }
+
+        .nav-btn,
+        .slider-button,
+        .primary-btn {
+            animation: pulseGlow 2.5s ease-in-out infinite;
+        }
+
+        .service-card,
+        .stat-card,
+        .benefit,
+        .process-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .service-card.show,
+        .stat-card.show,
+        .benefit.show,
+        .process-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card:nth-child(2),
+        .stat-card:nth-child(2),
+        .benefit:nth-child(2),
+        .process-card:nth-child(2) {
+            transition-delay: 0.1s;
+        }
+
+        .service-card:nth-child(3),
+        .stat-card:nth-child(3),
+        .benefit:nth-child(3),
+        .process-card:nth-child(3) {
+            transition-delay: 0.2s;
+        }
+
+        .service-card:nth-child(4),
+        .stat-card:nth-child(4),
+        .benefit:nth-child(4),
+        .process-card:nth-child(4) {
+            transition-delay: 0.3s;
+        }
+
+        .service-card:nth-child(5),
+        .process-card:nth-child(5) {
+            transition-delay: 0.4s;
+        }
+
+        .service-card:nth-child(6),
+        .process-card:nth-child(6) {
+            transition-delay: 0.5s;
+        }
+
+        .section-heading,
+        .about-image,
+        .about-text,
+        .why-image,
+        .why-content {
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-content {
+            animation: fadeUp 1s ease both;
+        }
+
+        .slide.active .slide-content {
+            animation: fadeUp 0.9s ease both;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
         /* =========================================
            TABLET
         ========================================= */
@@ -1529,7 +1711,7 @@
         <nav class="navbar">
 
             <a href="#home" class="logo">
-                Solarmax <span>Energy</span>
+                TOBAFTECH <span>Energy</span>
             </a>
 
             <button
@@ -1602,7 +1784,7 @@
                 <p>
                     Reliable solar power solutions
                     for homes, businesses and
-                    organizations across Osogbo.
+                    organizations across Ilesa.
                 </p>
 
                 <a href="#contact" class="slider-button">
@@ -1784,10 +1966,10 @@
 
         <div class="section-container">
 
-            <div class="section-heading">
+            <div class="section-heading reveal">
 
                 <span class="small-title">
-                    ABOUT SOLARMAX
+                    ABOUT TOBAFTECH
                 </span>
 
                 <h2>
@@ -1805,7 +1987,7 @@
 
             <div class="about-grid">
 
-                <div class="about-image">
+                <div class="about-image reveal">
 
                     <img
                         src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1000&q=85"
@@ -1815,12 +1997,12 @@
                 </div>
 
 
-                <div class="about-text">
+                <div class="about-text reveal">
 
                     <p>
                         We provide dependable solar energy
                         solutions for homes, businesses and
-                        organizations across Osogbo and beyond.
+                        organizations across Ilesa and beyond.
                     </p>
 
                     <p>
@@ -1905,7 +2087,7 @@
 
         <div class="section-container">
 
-            <div class="section-heading center">
+            <div class="section-heading center reveal">
 
                 <span class="small-title">
                     OUR SERVICES
@@ -2025,7 +2207,7 @@
 
             <div class="why-grid">
 
-                <div class="why-image">
+                <div class="why-image reveal">
 
                     <img
                         src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=85"
@@ -2035,7 +2217,7 @@
                 </div>
 
 
-                <div class="why-content">
+                <div class="why-content reveal">
 
                     <span class="small-title">
                         WHY CHOOSE US
@@ -2043,7 +2225,7 @@
 
                     <h2>
                         Why Choose
-                        Solarmax Energy Ltd?
+                        TOBAFSAT8080 GLOBAL RESOURCES COMPANY?
                     </h2>
 
                     <p>
@@ -2130,7 +2312,7 @@
 
         <div class="section-container">
 
-            <div class="section-heading center">
+            <div class="section-heading center reveal">
 
                 <span class="small-title">
                     HOW IT WORKS
@@ -2231,7 +2413,7 @@
 
     <section class="cta">
 
-        <div class="cta-content">
+        <div class="cta-content reveal">
 
             <div>
 
@@ -2244,7 +2426,7 @@
                 </h2>
 
                 <p>
-                    Let Solarmax Energy Ltd help you
+                    Let TOBAFSAT8080 GLOBAL RESOURCES COMPANY help you
                     find the right solar solution for
                     your home or business.
                 </p>
@@ -2262,10 +2444,10 @@
                 </a>
 
                 <a
-                    href="tel:08038984340"
+                    href="tel:08038258610"
                     class="phone"
                 >
-                    0803 898 4340
+                    0803 825 8610
                 </a>
 
             </div>
@@ -2282,7 +2464,7 @@
 
         <div class="section-container">
 
-            <div class="section-heading center">
+            <div class="section-heading center reveal">
 
                 <span class="small-title">
                     CONTACT US
@@ -2303,10 +2485,10 @@
             <div class="contact-grid">
 
 
-                <div class="contact-info">
+                <div class="contact-info reveal">
 
                     <h3>
-                        Solarmax Energy Ltd
+                        TOBAFSAT8080 GLOBAL RESOURCES COMPANY
                     </h3>
 
                     <p class="contact-intro">
@@ -2326,7 +2508,7 @@
                             Olaiya, Fagbewesa Street,
                             2 Adekunle Square Road,
                             beside Ebenezer Hotel,
-                            Osogbo, Osun State, Nigeria.
+                            Ilesa, Osun State, Nigeria.
                         </p>
 
                     </div>
@@ -2339,8 +2521,8 @@
                         </strong>
 
                         <p>
-                            <a href="tel:08038984340">
-                                0803 898 4340
+                            <a href="tel:08038258610">
+                                0803 825 8610
                             </a>
                         </p>
 
@@ -2367,7 +2549,7 @@
                         </strong>
 
                         <p>
-                            5.0 stars from 4 reviews
+                            5.0 stars from 2 reviews
                         </p>
 
                     </div>
@@ -2380,7 +2562,7 @@
                         </strong>
 
                         <p>
-                            QHG2+C2 Osogbo
+                            QHG2+C2 Ilesa
                         </p>
 
                     </div>
@@ -2391,7 +2573,7 @@
 
                 <!-- FORM -->
 
-                <div class="contact-form">
+                <div class="contact-form reveal">
 
                     <form id="contactForm">
 
@@ -2420,7 +2602,7 @@
 
                                 <input
                                     type="tel"
-                                    placeholder="0803 898 4340"
+                                    placeholder="0803 825 8610"
                                     required
                                 >
 
@@ -2522,9 +2704,9 @@
             <div class="map">
 
                 <iframe
-                    src="https://www.google.com/maps?q=Osogbo,Osun,Nigeria&output=embed"
+                    src="https://www.google.com/maps?q=Ilesa,Osun,Nigeria&output=embed"
                     loading="lazy"
-                    title="Solarmax Energy Ltd location"
+                    title="TOBAFSAT8080 GLOBAL RESOURCES COMPANY location"
                 ></iframe>
 
             </div>
@@ -2548,7 +2730,7 @@
                     href="#home"
                     class="footer-logo"
                 >
-                    Solarmax Energy Ltd
+                    TOBAFSAT8080 GLOBAL RESOURCES COMPANY
                 </a>
 
                 <p>
@@ -2625,11 +2807,11 @@
                 </h3>
 
                 <p>
-                    Osogbo, Osun State, Nigeria
+                    Ilesa, Osun State, Nigeria
                 </p>
 
-                <a href="tel:08038984340">
-                    0803 898 4340
+                <a href="tel:08038258610">
+                    0803 825 8610
                 </a>
 
                 <p>
@@ -2644,7 +2826,7 @@
         <div class="footer-bottom">
 
             <p>
-                © 2026 Solarmax Energy Ltd.
+                © 2026 TOBAFSAT8080 GLOBAL RESOURCES COMPANY.
                 All Rights Reserved.
             </p>
 
@@ -2781,6 +2963,33 @@
         }, 5000);
 
 
+
+
+        /* =========================================
+           SCROLL REVEAL ANIMATIONS
+        ========================================= */
+
+        const animatedElements = document.querySelectorAll(
+            ".reveal, .service-card, .stat-card, .benefit, .process-card"
+        );
+
+        const animationObserver = new IntersectionObserver(
+            function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+        animatedElements.forEach(function(element) {
+            animationObserver.observe(element);
+        });
 
         /* =========================================
            CONTACT FORM
